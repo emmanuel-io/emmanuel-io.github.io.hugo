@@ -1,0 +1,21 @@
+main:
+  - name: About
+    url: about/
+    weight: 1
+  - name: Posts
+    url: posts/
+    weight: 2
+  - name: Categories
+    url: categories/
+    weight: 3
+  # - identifier: categories
+  #   name: categories
+  #   url: /categories/
+  #   weight: 4
+  - identifier: tags
+    name: tags
+    url: /tags/
+    weight: 4
+  - name: Search
+    url: search/
+    weight: 5

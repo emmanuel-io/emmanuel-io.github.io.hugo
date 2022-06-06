@@ -1,0 +1,55 @@
+en:
+  languageName: English
+  languageAltTitle: "English"
+  weight: 1
+  # taxonomies:
+  #   category: categories
+  #   tag: tags
+  #   series: series
+
+  # homeInfoParams:
+  #  Title: Welcome to my github pages
+  #  Content: Here you'll find my articles on technical topics...
+
+  # profileMode:
+  #   enabled: false
+  #   title: Emmanuel IO
+  #   imageUrl: "/images/my_face.jpeg"
+  #   imageTitle: my image
+  #   imageWidth: 300
+  #   imageHeight: 300
+  #   buttons:
+  #     - name: Posts
+  #       url: posts/
+  #     - name: Archive
+  #       url: "archives"
+  #     - name: Github
+  #       url: 'https://github.com/emmanuel-io/'
+  #     - name: linkedin
+  #       url: "https://www.linkedin.com/in/emmanuelamadio/"
+
+fr:
+  languageName: Français
+  weight: 2
+
+  # homeInfoParams:
+  #   Title: Bienvenue sur mes pages github
+  #   Content: Vous trouverez ici mes articles sur des sujets techniques...
+
+  # profileMode:
+  #   enabled: false
+  #   title: Emmanuel IO
+  #   imageUrl: "/images/my_face.jpeg"
+  #   imageTitle: my image
+  #   imageWidth: 300
+  #   imageHeight: 300
+  #   buttons:
+  #     - name: Articles
+  #       url: posts/
+  #     - name: Archive
+  #       url: "archives"
+  #     - name: Github
+  #       url: 'https://github.com/emmanuel-io/'
+  #     - name: linkedin
+  #       url: "https://www.linkedin.com/in/emmanuelamadio/"
+

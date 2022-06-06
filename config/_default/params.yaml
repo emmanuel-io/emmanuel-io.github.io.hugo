@@ -1,0 +1,49 @@
+# env: production # to enable google analytics, opengraph, twitter-cards and schema.
+# description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+author: Emmanuel IO
+# author: ["Me", "You"] # multiple authors
+
+# defaultTheme: auto
+# disableThemeToggle: true
+ShowShareButtons: true
+ShowReadingTime: true
+# disableSpecial1stPost: true
+displayFullLangName: true
+ShowPostNavLinks: true
+ShowBreadCrumbs: true
+ShowCodeCopyButtons: true
+ShowRssButtonInSectionTermList: true
+ShowToc: true
+# comments: false
+images: ["papermod-cover.png"]
+
+# profileMode:
+#   enabled: enable
+#   title: Emmanuel IO
+#   imageUrl: "/images/my_face.jpeg"
+#   imageTitle: my image
+#   imageWidth: 300
+#   imageHeight: 300
+#   buttons:
+#     - name: Posts
+#       url: posts/
+#     - name: Github
+#       url: 'https://github.com/emmanuel-io/'
+#     - name: linkedin
+#       url: "https://www.linkedin.com/in/emmanuelamadio/"
+
+# homeInfoParams:
+#   Title: "PaperMod"
+#   Content: >
+#     Welcome to demo of hugo's theme PaperMod.
+#     - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+#     - Do give a 🌟 on Github !
+#     - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+
+socialIcons:
+  - name: RsS
+    url: "index.xml"
+  - name: github
+    url: 'https://github.com/emmanuel-io/'
+  - name: linkedin
+    url: 'https://www.linkedin.com/in/emmanuelamadio/'

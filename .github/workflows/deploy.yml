@@ -17,14 +17,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
       
       # Github Actions fo Hugo
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@16361eb4acea8698b220b76c0d4e84e1fd22c61d
         with:
           hugo-version: "latest"
           extended: true
@@ -35,7 +35,7 @@ jobs:
       
       # Upload/Commit the contents from publish_dir -> external_repository
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.9.3
+        uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}

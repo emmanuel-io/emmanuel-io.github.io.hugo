@@ -15,7 +15,7 @@ ShowCodeCopyButtons: true
 ShowRssButtonInSectionTermList: true
 ShowToc: true
 # comments: false
-images: ["papermod-cover.png"]
+# images: ["papermod-cover.png"]
 
 # profileMode:
 #   enabled: enable

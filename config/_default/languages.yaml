@@ -1,6 +1,6 @@
 en:
   languageName: English
-  languageAltTitle: "English"
+  # languageAltTitle: "English"
   weight: 1
   # taxonomies:
   #   category: categories

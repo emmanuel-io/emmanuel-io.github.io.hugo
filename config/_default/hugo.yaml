@@ -1,4 +1,4 @@
-# title: Emmanuel IO tech blog
+title: Emmanuel IO tech blog
 # baseURL: ''
 languageCode: en-us
 defaultContentLang: en
@@ -6,7 +6,7 @@ defaultContentLanguageInSubdir: true
 disableLanguages:
   - de
   - es
-  # - fr
+  - fr
 
 # theme: "paper"
 theme: PaperMod

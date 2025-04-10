@@ -1,12 +1,11 @@
 ---
 title: "How to set up a fastapi backend service project"
-date: 2022-06-27T01:122:42+02:00
+date: 2022-06-27T01:12:42+02:00
 author: "Emmanuel IO"
 linktitle: How to set up a fastapi backend service project
 # next: /spring-boot-devtools-on-intellij
 # prev: /set-hugo-1
 weight: 3
-authorAvatar: image/logo.svg
 image: image/3/selfBlog.png
 tags : [
     "fastapi",

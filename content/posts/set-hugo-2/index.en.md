@@ -1,23 +1,21 @@
 ---
-title: "How to set up this website using Hugo part 2"
-date: 2022-06-04T01:122:42+02:00
-author: "Emmanuel IO"
-linktitle: How to set up this website using Hugo
-# next: /spring-boot-devtools-on-intellij
-prev: /set-hugo-1
-weight: 3
-authorAvatar: image/logo.svg
+title: "Deploying Hugo to GitHub Pages with CI/CD"
+description: "Set up GitHub Actions and deploy your Hugo blog using SSH deploy keys and a dual-repo strategy."
+date: 2022-06-04T01:12:42+02:00
 image: image/3/selfBlog.png
-tags : [
-    "hugo",
-    "blog",
-    "tutorial",
-]
-categories : [
-    "tutorial"
-]
+linktitle: "Deploying Hugo to GitHub Pages with CI/CD"
+tags:
+  - hugo
+  - blog
+  - tutorial
+categories:
+  - tutorial
+series: ["hugo-deployment"]
+prev: /set-hugo-1
 draft: false
+weight: 2
 ---
+
 
 In part 1 we explored how I created a website using Hugo, now we are going to create a github action to automatically deploy the site on github pages when we create a commit.
 

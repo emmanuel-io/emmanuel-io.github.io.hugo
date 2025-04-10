@@ -1,24 +1,22 @@
 ---
-title: "How to set up this website using Hugo part 1"
-date: 2022-06-04T01:122:42+02:00
-author: "Emmanuel IO"
-linktitle: How to set up this website using Hugo
+title: "Setting up Hugo locally with Git and a theme"
+description: "Learn how to set up a Hugo blog from scratch using Git, submodules, and a starter theme."
+date: 2022-06-04T01:12:42+02:00
+image: 434284638_262047363631315_501358433474908523_n.jpg
+linktitle: "Setting up Hugo locally with Git and a theme"
+tags:
+  - hugo
+  - blog
+  - tutorial
+categories:
+  - tutorial
+series: ["hugo-deployment"]
 next: /set-hugo-2
-# prev: /using-redis-with-spring-boot
-weight: 3
-authorAvatar: image/logo.svg
-image: image/3/selfBlog.png
-tags : [
-    "hugo",
-    "blog",
-    "tutorial",
-]
-categories : [
-    "tutorial"
-]
 draft: false
+weight: 1
+comments: false
+hidden: false
 ---
-
 My career is shifting, and I'm steering it towards web development, mostly backend. Coming from digital electronics & embedded systems, I have a broad view on the digital ecosystem and I need a space where to show case my work and ideas. Having a github account is nice, but I wanted a place where I could publish articles online. It can be of any form like tutorial, blogs, reviews, editorials and much more. Having my own blog provide the chance to add one more aspect of social presence. This blog website will as well be my portfolio.
 
 ## What were the options for blogging
@@ -48,7 +46,7 @@ While github pages provides a convenient way to use [Jekyll](https://docs.github
 
 Quoting from the official website:
 
->Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+> Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
 
 Hugo can be used for complete Content Management where content can be provided in many ways. It has lot of feature for customization,content organizing and important to me, multilingual support out of the box.
 
@@ -151,14 +149,14 @@ hint: 'development'. The just-created branch can be renamed via this command:
 hint: 
 hint:     git branch -m <name>
 Initialized empty Git repository in /home/emmanuel/Documents/emmanuel-io-github-io-hugo/.git/
- ```
+```
 
 Type below command if like me your default branch is still master and not main.
 
 ```bash
 # Change branch to main
 git branch -m main
- ```
+```
 
 #### Theme Installation
 
@@ -197,7 +195,7 @@ Finally I launched hugo web server using the below command:
 hugo server
 ```
 
-This will start a local server at [http://localhost:1313](http://localhost:1313).
+This will start a local server at <http://localhost:1313>.
 Right now this shows the theme demo website
 
 ### **3. Create my own site**

@@ -1,0 +1,4 @@
+baseURL: ''
+buildDrafts: true
+buildFuture: true
+buildExpired: false

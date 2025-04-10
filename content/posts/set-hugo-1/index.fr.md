@@ -1,23 +1,23 @@
 ---
-title: "Comment j'ai construit ce site avec Hugo partie 1"
-date: 2022-06-04T01:122:42+02:00
-author: "Emmanuel IO"
-linktitle: How to set up this website using Hugo
-next: /set-hugo-2
-# prev: /using-redis-with-spring-boot
-weight: 3
-authorAvatar: image/logo.svg
-image: image/3/selfBlog.png
-tags : [
-    "hugo",
-    "blog",
-    "tutorial",
-]
-categories : [
-    "tutorial"
-]
+title: "Configurer Hugo en local avec Git et un thème"
+description: "Découvrez comment créer un blog Hugo avec Git, un thème personnalisé, et le configurer comme base pour un site personnel."
+date: 2022-06-04T01:12:42+02:00
+image: 434284638_262047363631315_501358433474908523_n.jpg
+linktitle: "Configurer Hugo avec Git et un thème"
+tags:
+  - hugo
+  - blog
+  - tutoriel
+categories:
+  - tutoriel
+series: ["hugo-deployment"]
+next: /fr/set-hugo-2
 draft: false
+weight: 1
+comments: false
+hidden: false
 ---
+
 
 Ma carrière évolue, et je l'oriente vers le développement web, principalement backend. Issu de l'électronique numérique et des systèmes embarqués, j'ai une vision large de l'écosystème numérique et j'ai besoin d'un espace où présenter mon travail et mes idées. Avoir un compte github c'est bien, mais je voulais un endroit où je pourrais publier des articles en ligne. Il peut prendre n'importe quelle forme, comme des tutoriels, des blogs, des critiques, des éditoriaux et bien plus encore. Avoir mon propre blog offre la possibilité d'ajouter un autre aspect de la présence sociale. Ce blog sera également mon portfolio.
 

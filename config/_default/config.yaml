@@ -1,0 +1,36 @@
+baseURL: ''
+defaultContentLang: en
+defaultContentLanguageInSubdir: false
+theme: ["PaperMod"]
+enableRobotsTXT: true
+googleAnalytics: ''
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
+minify:
+  disableXML: true
+  minifyOutput: true
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  x:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+services:
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true

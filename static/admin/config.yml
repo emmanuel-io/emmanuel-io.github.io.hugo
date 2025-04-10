@@ -1,0 +1,44 @@
+
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_files
+
+  # Required - a list of locales to show in the editor UI
+  locales: [en, fr]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: en
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: "posts" # This is the name used in the URL
+    label: "Post" # This is the singular name of the content type for the UI
+    folder: "content/posts" # The folder where your posts markdown files will be saved
+    i18n: true
+    path: "{{slug}}/index"
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allows users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template for new posts
+    fields: # List of fields for the front matter
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Description", name: "description", widget: "text", i18n: true }
+      - { label: "Date", name: "date", widget: "datetime", i18n: duplicate }
+      - { label: "Image", name: "image", widget: "image", required: false, i18n: duplicate }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, i18n: duplicate }
+      - { label: "Comments", name: "comments", widget: "boolean", default: true, i18n: duplicate }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, i18n: duplicate }
+      - { label: "Weight", name: "weight", widget: "number", i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }

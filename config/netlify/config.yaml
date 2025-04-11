@@ -1,4 +1,4 @@
-baseURL: ''
-buildDrafts: true
-buildFuture: true
+baseURL: 'https://emmanuel-io.netlify.app/'
+buildDrafts: false
+buildFuture: false
 buildExpired: false

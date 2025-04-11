@@ -1,7 +1,6 @@
 ---
 title: "CV"
 description: "Version en ligne de mon CV — expériences, compétences, parcours."
-# url: /fr/cv/
 ShowBreadCrumbs: false
 ShowToc: false
 translationKey: cv-page

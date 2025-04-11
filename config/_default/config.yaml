@@ -23,8 +23,12 @@ languages:
     params:
       profileMode:
         enabled: true
-        title: "emmanuel io — Digital Solutions Developer"
-        subtitle: "I design fast, maintainable software that delivers lasting value — 100% remote, performance-driven."
+        title: |
+          emmanuel io  
+          Digital Solutions Developer
+        subtitle: |
+          I design fast, maintainable software that delivers lasting value.  
+          100&nbsp;% remote, performance-driven
         imageUrl: "images/emmanuel-io-avatar.png"
         imageTitle: "My photo"
         imageWidth: 400
@@ -44,8 +48,12 @@ languages:
     params:
       profileMode:
         enabled: true
-        title: "emmanuel io — Développeur de solutions numériques"
-        subtitle: "Je conçois des logiciels rapides et durables, pensés pour la valeur — 100 % à distance, axé performance."
+        title: |
+          emmanuel io  
+          Développeur de solutions numériques
+        subtitle: |
+          Je conçois des logiciels rapides et durables, pensés pour créer de la valeur.  
+          100&nbsp;% à distance, axé performance
         imageUrl: "images/emmanuel-io-avatar.png"
         imageTitle: "Ma photo"
         imageWidth: 400

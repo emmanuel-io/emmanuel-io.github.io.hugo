@@ -12,9 +12,9 @@ main:
     name: Tags
     url: /fr/tags/
     weight: 4
-  - name: Recherche
-    url: /fr/search/
-    weight: 5
+  # - name: Recherche
+  #   url: /fr/search/
+  #   weight: 5
   - name: CV
     url: /cv/
     weight: 6

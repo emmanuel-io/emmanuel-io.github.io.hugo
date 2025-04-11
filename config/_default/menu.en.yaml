@@ -12,9 +12,9 @@ main:
     name: Tags
     url: /tags/
     weight: 4
-  - name: Search
-    url: /search/
-    weight: 5
+  # - name: Search
+  #   url: /search/
+  #   weight: 5
   - name: Résumé
     url: /cv/
     weight: 6

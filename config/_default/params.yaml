@@ -1,26 +1,33 @@
-author: Emmanuel IO
+author: emmanuel io
 authorAvatar: images/emmanuel-io-avatar.png
+
+ShowPostList: true
 ShowReadingTime: true
 ShowCodeCopyButtons: true
 ShowPostNavLinks: true
 ShowBreadCrumbs: true
 ShowLangSwitch: true
 ShowFullTextinRSS: true
+ShowShareButtons: true
 ShowToc: true
 TocOpen: false
 ShowPageNums: true
-profileMode:
-  enabled: true
-  title: Emmanuel IO
-  subtitle: Backend Dev · FastAPI Fan · Hugo Builder
-  imageUrl: images/emmanuel-io-avatar.png
-  imageTitle: Emmanuel's avatar
-  imageWidth: 120
-  imageHeight: 120
-  buttons:
-  - name: Posts
-    url: posts
-  - name: About
-    url: about
-  - name: GitHub
-    url: https://github.com/emmanuel-io
+
+sortByDate: desc
+
+defaultTheme: dark
+
+socialIcons:
+  - name: github
+    url: "https://github.com/emmanuel-io"
+  - name: linkedin
+    url: "https://www.linkedin.com/in/emmanuelamadio/"
+  - name: email
+    url: "mailto:emmanuel.amadio@gmail.com"
+  - name: x
+    url: "https://x.com/emmanuel_i_o"
+
+
+# assets:
+#   css:
+#     - css/extra.css

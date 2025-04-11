@@ -1,20 +1,70 @@
-baseURL: ''
-defaultContentLang: en
-defaultContentLanguageInSubdir: false
-theme: ["PaperMod"]
+baseURL: "http://localhost:1313/"
+title: "emmanuel io"
+theme: PaperMod
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
 enableRobotsTXT: true
 googleAnalytics: ''
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 pygmentsUseClasses: true
+
+languages:
+  en:
+    contentDir: content
+    # disabled: false
+    languageCode: en-US
+    languageDirection: ltr
+    languageName: English
+    weight: 1
+    params:
+      profileMode:
+        enabled: true
+        title: "emmanuel io — Digital Solutions Developer"
+        subtitle: "I design fast, maintainable software that delivers lasting value — 100% remote, performance-driven."
+        imageUrl: "images/emmanuel-io-avatar.png"
+        imageTitle: "My photo"
+        imageWidth: 400
+        imageHeight: 400
+        buttons:
+          - name: "Read blog"
+            url: "/en/posts/"
+          - name: "About"
+            url: "/en/about/"
+  fr:
+    contentDir: content
+    # disabled: false
+    languageCode: fr-FR
+    languageDirection: ltr
+    languageName: Français
+    weight: 2
+    params:
+      profileMode:
+        enabled: true
+        title: "emmanuel io — Développeur de solutions numériques"
+        subtitle: "Je conçois des logiciels rapides et durables, pensés pour la valeur — 100 % à distance, axé performance."
+        imageUrl: "images/emmanuel-io-avatar.png"
+        imageTitle: "Ma photo"
+        imageWidth: 400
+        imageHeight: 400
+        buttons:
+          - name: "Blog"
+            url: "/fr/posts/"
+          - name: "À propos"
+            url: "/fr/about/"
+
 sitemap:
   changefreq: monthly
   priority: 0.5
   filename: sitemap.xml
+
 minify:
   disableXML: true
   minifyOutput: true
+
 privacy:
   vimeo:
     disabled: false
@@ -29,6 +79,7 @@ privacy:
   youtube:
     disabled: false
     privacyEnhanced: true
+
 services:
   instagram:
     disableInlineCSS: true

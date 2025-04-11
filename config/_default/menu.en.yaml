@@ -1,0 +1,20 @@
+main:
+  - name: About
+    url: /about/
+    weight: 1
+  - name: Articles
+    url: /posts/
+    weight: 2
+  - name: Categories
+    url: /categories/
+    weight: 3
+  - identifier: tags
+    name: Tags
+    url: /tags/
+    weight: 4
+  - name: Search
+    url: /search/
+    weight: 5
+  - name: Résumé
+    url: /cv/
+    weight: 6

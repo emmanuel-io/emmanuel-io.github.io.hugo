@@ -1,19 +1,19 @@
-home:
-  outputs:
-  - HTML
-  - RSS
-  - JSON
-section:
-  outputs:
-  - HTML
-  - RSS
-page:
-  outputs:
-  - HTML
-taxonomy:
-  outputs:
-  - HTML
-  - RSS
-taxonomyTerm:
-  outputs:
-  - HTML
+# home:
+#   outputs:
+#   - HTML
+#   - RSS
+#   - JSON
+# section:
+#   outputs:
+#   - HTML
+#   - RSS
+# page:
+#   outputs:
+#   - HTML
+# taxonomy:
+#   outputs:
+#   - HTML
+#   - RSS
+# taxonomyTerm:
+#   outputs:
+#   - HTML

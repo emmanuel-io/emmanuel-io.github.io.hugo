@@ -1,4 +1,5 @@
-baseURL: ''
+baseURL: "http://localhost:1313/"
+title: "emmanuel io development"
 buildDrafts: true
 buildFuture: true
 buildExpired: false

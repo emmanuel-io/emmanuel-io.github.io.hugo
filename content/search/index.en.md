@@ -4,5 +4,6 @@ title: "Search" # in any language you want
 # url: "/archive"
 # description: "Description for Search"
 summary: "search"
+ShowBreadCrumbs: false
 placeholder: "placeholder text in search input box"
 ---

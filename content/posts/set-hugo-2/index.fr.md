@@ -13,7 +13,6 @@ categories:
 series: ["hugo-deployment"]
 prev: /fr/set-hugo-1
 draft: false
-weight: 2
 ---
 
 

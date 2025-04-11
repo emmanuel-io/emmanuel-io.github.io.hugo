@@ -1,37 +1,46 @@
 ---
-title: "About"
-description: "💻 Digital Solutions Developer 📈 Agile Facilitator 🥇 Embedded Systems Expertise 🛠 [ C | Python | VHDL | Web Services | Electronics | Scrum ]"
-# menu:
-#   main:
-#     weight: 1
+title: "The Mind Behind emmanuel io"
+description: "Digital Solutions Developer | 25+ years in software | Focused on performance, clarity & long-term value"
+translationKey: about-page
+ShowBreadCrumbs: false
+ShowToc: false
 ---
+
 {{< figure src="/images/Atari_1040STf.jpg" title="It started with this, long ago" >}}
 
-Creative by nature, I enjoy solving problems and developing new digital solutions. 
-An agile developer and facilitator, I have a know-how in C programming and python micro services.
-I have 20 years of experience in embedded systems product development (hardware - firmware - software). 
-My technical background is mainly linked to microcontrollers - fpgas - electronics.
+## 👋 Hi, I’m emmanuel io
 
-I enjoy using english for my work language, being in a multicultural environment and working with people having different technical - soft or hard - skills.
+**Digital Solutions Developer**  
+100% remote · Performance-driven · Outcome-oriented
 
-To understand more how I work, here are my go-to rules:
+With over 25 years in the software industry, I build thoughtful, high-performance systems — from embedded platforms and backend APIs to automation workflows and developer tools.
 
-🎯 KISS : Keep It Simple and Stupid.
+I’ve worked across microcontrollers, FPGAs, electronics, cloud services, and SaaS platforms — always with a focus on clean architecture, maintainability, and long-term value.
 
-🎯 DRY : Don’t Repeat Yourself.
+I’m comfortable working solo or within multicultural, multi-skilled teams. I thrive in asynchronous collaboration, and I love writing clear, readable code that lasts.
 
-🎯 Consistency beats intensity : Long term strategy.
+---
 
-🎯 Explain it : If it can’t be explained, it’s not understood or too complicated.
+## 🧠 My Work Philosophy
 
-🎯 Simplify : If it’s too complicated, break it into smaller pieces.
+Here are some principles that guide how I build software and work with others:
 
-🎯 Be like water : Go with the flow.
+- 🎯 **KISS** — Keep It Simple and Stupid.  
+- 🎯 **DRY** — Don’t Repeat Yourself.  
+- 🎯 **Consistency beats intensity** — Think long-term.  
+- 🎯 **Explain it** — If it can’t be explained, it’s not understood.  
+- 🎯 **Simplify** — If it’s too complex, break it down.  
+- 🎯 **Be like water** — Adapt to the flow.  
+- 🎯 **Be open and transparent** — Feedback drives improvement.  
+- 🎯 **Break the rules when it makes sense** — But do it with purpose and accountability.  
 
-🎯 Be open and transparent : Feedback is key for improvement.
+And the one rule that overrides all others:
 
-🎯 When it makes sense, break the rules : But do it meaningfully and stay accountable.
+> 🎯 **Knowledge is multiplied when shared.** Never keep it to yourself.
+<!--
+---
 
-Only one rule which can’t be broken:
-
-🎯 Knowledge is multiplied when shared : don’t keep things for yourself.
+📄 [Download my CV](cv/emmanuel-amadio-cv.pdf)  
+🔗 [GitHub](https://github.com/emmanuel-io)  
+🔗 [LinkedIn](https://www.linkedin.com/in/emmanuelamadio/)
+-->

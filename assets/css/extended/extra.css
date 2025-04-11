@@ -1,0 +1,89 @@
+:root {
+  --theme: #e2f4e6;
+  /* Theme background */
+  --entry: #f0fff4;
+  /* Card/background for content blocks */
+  --primary: #007a33;
+  /* Main accent — titles, headings, links */
+  --secondary: #26623f;
+  /* Subheadings, date text */
+  --tertiary: #c2f0d0;
+  /* Meta text, tag labels, button background */
+  --content: #006800;
+  /* Main body text color */
+  --code-block-bg: #24273a;
+  /* Background for fenced code blocks Using chroma color */
+  --code-bg: #d1e3d6;
+  /* Inline code background */
+  --border: #c5dec4;
+  /* Borders and divider lines */
+}
+
+/*
+.dark {
+  --theme: #0a0a0a;
+  --entry: #141414;
+  --primary: #00ff4a;
+  --secondary: #66cc99;
+  --tertiary: #444444;
+  --content: #f0f0f0;
+  --code-block-bg: #111111;
+  --code-bg: #1a1a1a;
+  --border: #1f1f1f;
+}
+*/
+.dark {
+  --theme: #0a0a0a;
+  /* Background base */
+  --entry: #13271d;
+  /* Lifted slightly like #f0fff4 is from #e2f4e6 */
+  --primary: #00ff4a;
+  /* Neon green brand color */
+  --secondary: #00cc3f;
+  /* ~20% darker than primary (like #26623f vs. #007a33) */
+  --tertiary: #264d3a;
+  /* Desaturated and lighter green like #c2f0d0 */
+  --content: #00cc3f;
+  /* Slightly deeper than primary (like #006800 vs. #007a33) */
+  --code-block-bg: #13221b;
+  /* Balanced with dark green card */
+  --code-bg: #1a2c23;
+  /* Inline code tone matching light theme */
+  --border: #1f3a2e;
+  /* Matches tone and contrast from #c5dec4 */
+}
+
+.list {
+  background: var(--theme);
+}
+
+.dark.list {
+  background: var(--theme);
+}
+
+body {
+  font-family: monospace;
+}
+
+/* 
+a:hover {
+  color: #009e32;
+}
+.button-accent {
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+}
+
+.button-accent:hover {
+  background-color: #5a38a2;
+} */
+
+.profile_inner img {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.profile_inner img:hover {
+  filter: drop-shadow(0 0 8px #00ff4a) brightness(1.1);
+  transform: scale(1.05);
+}

@@ -1,9 +1,9 @@
 ---
-title: "Configurer Hugo en local avec Git et un thème"
-description: "Découvrez comment créer un blog Hugo avec Git, un thème personnalisé, et le configurer comme base pour un site personnel."
+title: "Configurer Hugo localement avec Git et un thème"
+description: "Apprenez à configurer un blog Hugo depuis zéro en utilisant Git, les sous-modules et un thème de démarrage."
 date: 2022-06-04T01:12:42+02:00
-image: 434284638_262047363631315_501358433474908523_n.jpg
-linktitle: "Configurer Hugo avec Git et un thème"
+# image: 434284638_262047363631315_501358433474908523_n.jpg
+linktitle: "Configurer Hugo localement avec Git et un thème"
 tags:
   - hugo
   - blog
@@ -11,195 +11,126 @@ tags:
 categories:
   - tutoriel
 series: ["hugo-deployment"]
-next: /fr/set-hugo-2
+next: /set-hugo-2
 draft: false
-weight: 1
 comments: false
 hidden: false
 ---
 
+J'avais besoin d'un espace pour présenter mon travail, partager des idées et écrire des articles — qu'il s'agisse de tutoriels, de critiques, d'éditoriaux ou de simples billets de blog. GitHub est idéal pour héberger du code, mais je voulais un espace à moi sur le web. Ce blog me sert aussi de portfolio numérique.
 
-Ma carrière évolue, et je l'oriente vers le développement web, principalement backend. Issu de l'électronique numérique et des systèmes embarqués, j'ai une vision large de l'écosystème numérique et j'ai besoin d'un espace où présenter mon travail et mes idées. Avoir un compte github c'est bien, mais je voulais un endroit où je pourrais publier des articles en ligne. Il peut prendre n'importe quelle forme, comme des tutoriels, des blogs, des critiques, des éditoriaux et bien plus encore. Avoir mon propre blog offre la possibilité d'ajouter un autre aspect de la présence sociale. Ce blog sera également mon portfolio.
+## Quelles options pour bloguer ?
 
-## What were the options for blogging
+Voici quelques plateformes populaires pour démarrer un blog :
 
-There are some free options, a couple of them are:
+- [WordPress](https://wordpress.com/)
+- [Medium](https://medium.com/)
+- [Ghost](https://ghost.org/)
+- [Wix](https://www.wix.com/blog)
 
-* [WordPress](https://wordpress.com/)
-* [Medium](https://medium.com/)
-* [Ghost](https://ghost.org/)
-* [Wix](https://www.wix.com/blog)
+Ces plateformes tout-en-un offrent des fonctionnalités intéressantes :
 
-These paid or partially free platforms provide a end to end solution to setup a website. They provides many benefits like :
+- Mise en page automatisée pour se concentrer sur le contenu
+- SEO intégré
+- Éditeur dans le navigateur
+- Gestion des médias, plugins et thèmes
+- Hébergement, base de données et mises à jour gérés automatiquement
 
-* Focus mainly on content. Formatting is configured on the platform
-* SEO (Search Engine Optimization) to promote the article in google search
-* Easy interface to write article in browser itself
-* And many more like support for images, videos and plugin extensions
-* Abstract database, themeing, hosting and updates management
+Mais je voulais quelque chose de gratuit, minimaliste, et entièrement sous mon contrôle.
 
-As the title of the suggest, I wanted to create blog for free and github allow you to have [hosting for free](https://pages.github.com/).
-The only catch here is that you can only have static content, no server, no database allowed.
+GitHub Pages propose [un hébergement gratuit pour du contenu statique](https://pages.github.com/) — sans backend, sans base de données — juste du HTML, CSS, JS. Cette contrainte m'a amené à explorer les **générateurs de sites statiques**.
 
-## Why Hugo?
+> 🚧 *Mes raisons de choisir Hugo, et une réflexion plus approfondie, seront abordées dans un article à part.*
 
-From the github pages constraints came an idea I wanted to try since a while: **using a static site generator**.
-While github pages provides a convenient way to use [Jekyll](https://docs.github.com/en/pages/setting-up-a-emmanuel-io-github-io-hugos-site-with-jekyll), a slow but proven solution, I wanted to try [Hugo](https://gohugo.io/) as it is fast and could use the github actions pipeline to do automatic site generation and it is written in the [Go](https://go.dev/) language which I wanted to have a taste of.
+---
 
-Quoting from the official website:
+## Mise en place du blog
 
->Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+J’ai suivi ces 5 étapes (inspirées de [l’article de Bhanu Chaddha](https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/)) :
 
-Hugo can be used for complete Content Management where content can be provided in many ways. It has lot of feature for customization,content organizing and important to me, multilingual support out of the box.
+1. Installer Hugo
+2. Créer le projet
+3. Initialiser Git
+4. Installer un thème via un sous-module
+5. Ajouter du contenu et lancer le site
 
-While geeky and loving to play with tech stacks, I needed a straightforward solution with great potential for evolution. So that I can save myself from the hassle of managing UX, Styling, Hosting, Database and other elements of website management.
-With Hugo, I just write the content at correct location and **there it is!!**.
+---
 
-## Now the process
+### 1. Installer Hugo
 
-Ok.. Lets do that
-
-I went through these 5 steps to setup this blog based on [Bhanu Chaddha's article](https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/):
-
-1. Install Hugo
-2. Create Project
-3. Write Your Blog
-4. Set up git repositories
-5. Push your content and Done!!
-
-Everything which follow is based on my own exeperience using Ubuntu 22.04, adapt it to your own needs using the [setup instructions](https://gohugo.io/getting-started/installing/)!
-
-### **1. Install Hugo**
-
-Installing Hugo on ubuntu is a breeze, just open a console and run:
+Sous Ubuntu :
 
 ```bash
-snap install hugo --channel=extended
+sudo snap install hugo --channel=extended
 ```
 
-After set up is completed. You can check if Hugo is installed correctly using below command. It should print current installed versions of Hugo:
+Vérifier l'installation :
 
 ```bash
-hugo version                                                                                                            
+hugo version
 ```
 
-For me the returned string looked like this:
+Exemple de sortie :
 
 ```text
-hugo v0.96.0-2fd4a7d3d6845e75f8b8ae3a2a7bd91438967bbb+extended linux/amd64 BuildDate=2022-03-26T09:15:58Z VendorInfo=mage
+hugo v0.96.0+extended linux/amd64 BuildDate=2022-03-26T09:15:58Z
 ```
 
-Lets move on to next step.
+---
 
-### **2. Create Project**
+### 2. Créer un nouveau projet Hugo
 
-Then I went to folder where I created this hugo project:
+Se rendre dans le dossier de travail :
 
 ```bash
 cd ~/Documents
-```
-
-Now it's time to create the project:
-
-```bash
 hugo new site emmanuel-io-github-io-hugo
 ```
 
-You would see below result. Basic hugo project is ready now.
+Cela crée la structure du projet Hugo.
 
-```text
-Congratulations! Your new Hugo site is created in /home/emmanuel/Documents/emmanuel-io-github-io-hugo.
+---
 
-Just a few more steps and you're ready to go:
+### 3. Initialiser Git
 
-1. Download a theme into the same-named folder.
-   Choose a theme from https://themes.gohugo.io/ or
-   create your own with the "hugo new theme <THEMENAME>" command.
-2. Perhaps you want to add some content. You can add single files
-   with "hugo new <SECTIONNAME>/<FILENAME>.<FORMAT>".
-3. Start the built-in live server via "hugo server".
-
-Visit https://gohugo.io/ for quickstart guide and full documentation.
+```bash
+cd emmanuel-io-github-io-hugo
+git init
+git branch -m main
 ```
 
-Hugo is a very flexible static site generator. So flexible that it doesn't impose a look and feel for your website. You could create everything from scratch by hand but there is a better way (they thought about it), use an existing [Hugo's themes](https://themes.gohugo.io/). You can always customize it later if you want.
+---
 
-For this blog I used the [ananke](https://themes.gohugo.io/themes/gohugo-theme-ananke/) theme.
+### 4. Installer un thème avec un sous-module
 
-While I could have installed the theme directly in the project tree, it's nicer to use it as a git submodule as I now I want to integrate everything in the github action pipeline. Furthermore this makes upgrades and git actions cleaner.
-
-Installing theme here is not same as installing Hugo. We would just map theme as sub-module in our git project. By doing this we would not clone the theme in the project but just add the reference of [casper-two](https://github.com/eueung/hugo-casper-two.git) theme. Hugo will automatically use the theme while generating the static content. For the context of this blog you dont need to know about the git sub-modules. You can just follow the commands as specified. If you wish to read about git sub-modules, you can read about it [here](https://github.blog/2016-02-01-working-with-submodules/)
-
-#### Git repository creation
-
-Type below commands to initialize the project as a git repository.
+J’ai choisi le thème [Ananke](https://themes.gohugo.io/themes/gohugo-theme-ananke/) et je l’ai ajouté comme sous-module Git :
 
 ```bash
-# Move into the project directory
-cd emmanuel-io-github-io-hugo
-
-# Initialize git repository    
-git init                                                                                
-hint: Using 'master' as the name for the initial branch. This default branch name
-hint: is subject to change. To configure the initial branch name to use in all
-hint: of your new repositories, which will suppress this warning, call:
-hint: 
-hint:     git config --global init.defaultBranch <name>
-hint: 
-hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-hint: 'development'. The just-created branch can be renamed via this command:
-hint: 
-hint:     git branch -m <name>
-Initialized empty Git repository in /home/emmanuel/Documents/emmanuel-io-github-io-hugo/.git/
- ```
-
-Type below command if like me your default branch is still master and not main.
-
-```bash
-# Change branch to main
-git branch -m main
- ```
-
-#### Theme Installation
-
-Type below command to install the theme.
-
-```bash
-# Adding theme as sub-module
 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 ```
 
-You will see below output
+---
 
-```bash
-Cloning into '/home/emmanuel/Documents/emmanuel-io-github-io-hugo/themes/ananke'...
-remote: Enumerating objects: 2529, done.
-remote: Counting objects: 100% (552/552), done.
-remote: Compressing objects: 100% (308/308), done.
-remote: Total 2529 (delta 279), reused 431 (delta 210), pack-reused 1977
-Receiving objects: 100% (2529/2529), 4.46 MiB | 2.05 MiB/s, done.
-Resolving deltas: 100% (1375/1375), done.
-```
+### 5. Ajouter la configuration d'exemple et du contenu
 
-#### Adding Configuration and content
-
-To have a website running, I first copied the exemple from the theme inside the current project using the command below:
+Pour tester rapidement le site :
 
 ```bash
 cp -R ./themes/ananke/exampleSite/{config.toml,content*,static*} ./
 ```
 
-#### Test it on local
-
-Finally I launched hugo web server using the below command:
+Puis lancer le serveur local :
 
 ```bash
 hugo server
 ```
 
-This will start a local server at [http://localhost:1313](http://localhost:1313).
-Right now this shows the theme demo website
+Accédez à [http://localhost:1313](http://localhost:1313) pour voir la version de démonstration du thème.
 
-### **3. Create my own site**
+---
 
-This part is out of the scope of this article, basically I created this new article and adjusted the configuration to fit my needs
+### 6. Personnaliser le site
+
+À partir de là, j’ai commencé à adapter la configuration à mes besoins.
+
+👉 *Dans le prochain article, j’expliquerai comment j’ai structuré le site, ajouté le support multilingue, configuré GitHub Actions et personnalisé le thème.*

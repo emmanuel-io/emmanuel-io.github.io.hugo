@@ -1,6 +1,7 @@
 ---
 title: "The Mind Behind emmanuel io"
 description: "Digital Solutions Developer | 25+ years in software | Focused on performance, clarity & long-term value"
+slug: about
 translationKey: about-page
 ShowBreadCrumbs: false
 ShowToc: false

@@ -93,3 +93,7 @@ services:
     disableInlineCSS: true
   x:
     disableInlineCSS: true
+
+# Enable Open Graph & Twitter
+enableOpenGraph: true
+enableTwitterCards: true

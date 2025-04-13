@@ -1,6 +1,7 @@
 ---
 title: "Dans la tête d’Emmanuel IO"
 description: "Développeur de solutions numériques | 25+ ans d’expérience | Axé sur la performance, la clarté et la valeur durable"
+slug: about
 translationKey: about-page
 ShowBreadCrumbs: false
 ShowToc: false

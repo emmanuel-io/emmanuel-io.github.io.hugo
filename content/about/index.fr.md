@@ -6,7 +6,7 @@ ShowBreadCrumbs: false
 ShowToc: false
 ---
 
-{{< figure src="/images/Atari_1040STf.jpg" title="Tout a commencé avec ça, il y a longtemps" >}}
+{{< localized-figure src="Atari-1040STf.jpg" title="Tout a commencé avec ça, il y a longtemps"  alt="Tout a commencé avec ça, il y a longtemps" >}}
 
 ## 👋 Salut, je suis emmanuel io
 

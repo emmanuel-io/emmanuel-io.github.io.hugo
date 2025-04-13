@@ -1,5 +1,5 @@
 author: emmanuel io
-authorAvatar: images/emmanuel-io-avatar.png
+authorAvatar: images/emmanuel-io-avatar-400x400.png
 
 ShowPostList: true
 ShowReadingTime: true
@@ -31,3 +31,8 @@ socialIcons:
 # assets:
 #   css:
 #     - css/extra.css
+
+# maxImageWidth: 1234
+# maxImageWidth:
+#   en: 1200
+#   fr: 1600

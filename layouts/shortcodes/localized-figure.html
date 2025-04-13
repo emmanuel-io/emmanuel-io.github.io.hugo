@@ -1,0 +1,55 @@
+{{/*
+  Usage:
+  {{< localized-figure src="image.jpg" max="1200" alt="..." title="..." >}}
+
+  Supports multilingual fallback for maxImageWidth
+*/}}
+
+{{ $src := .Get "src" }}
+{{ $img := index (.Page.Resources.Match $src) 0 }}
+{{ if not $img }}
+  {{ $img = index (.Page.Parent.Resources.Match $src) 0 }}
+{{ end }}
+
+{{ $lang := .Page.Lang }}
+{{ $max := .Get "max" }}
+
+{{ if not $max }}
+  {{ $max = .Page.Params.maxImageWidth }}
+{{ end }}
+{{ if not $max }}
+  {{ $max = site.Params.maxImageWidth }}
+  {{ if reflect.IsMap $max }}
+    {{ $max = index $max $lang | string }}
+  {{ end }}
+{{ end }}
+
+{{ $max = $max | default "1024" | int }}
+
+{{ if and $img (eq $img.ResourceType "image") }}
+  {{ $resized := $img.Process (printf "resize %dx" $max) }}
+  {{ $half := $img.Process (printf "resize %dx" (div $max 2)) }}
+  {{ $webp := $resized.Process "convert webp" }}
+  {{ $halfWebp := $half.Process "convert webp" }}
+
+  <figure>
+    <picture>
+      <source type="image/webp"
+              srcset="{{ $halfWebp.RelPermalink }} {{ $halfWebp.Width }}w" media="(max-width: 768px)">
+      <source type="image/webp"
+              srcset="{{ $webp.RelPermalink }} {{ $webp.Width }}w">
+      <source type="{{ $img.MediaType.Type }}/{{ $img.MediaType.SubType }}"
+              srcset="{{ $half.RelPermalink }} {{ $half.Width }}w, {{ $resized.RelPermalink }} {{ $resized.Width }}w">
+      <img src="{{ $resized.RelPermalink }}"
+           alt="{{ .Get "alt" }}"
+           width="{{ $resized.Width }}"
+           height="{{ $resized.Height }}"
+           loading="lazy"
+           decoding="async"
+           sizes="(max-width: 768px) 100vw, {{ $resized.Width }}px">
+    </picture>
+    {{ with .Get "title" }}
+    <figcaption>{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+{{ end }}

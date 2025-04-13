@@ -3,7 +3,7 @@ title: "emmanuel io"
 theme: PaperMod
 
 defaultContentLanguage: en
-defaultContentLanguageInSubdir: true
+defaultContentLanguageInSubdir: false
 
 enableRobotsTXT: true
 googleAnalytics: ''
@@ -19,7 +19,7 @@ languages:
     languageCode: en-US
     languageDirection: ltr
     languageName: English
-    weight: 1
+    # weight: 1
     params:
       profileMode:
         enabled: true
@@ -29,22 +29,22 @@ languages:
         subtitle: |
           I design fast, maintainable software that delivers lasting value.  
           100&nbsp;% remote, performance-driven
-        imageUrl: "images/emmanuel-io-avatar.png"
+        imageUrl: "images/emmanuel-io-avatar-400x400.png"
         imageTitle: "My photo"
         imageWidth: 400
         imageHeight: 400
         buttons:
           - name: "Read blog"
-            url: "/en/posts/"
+            url: "/posts/"
           - name: "About"
-            url: "/en/about/"
+            url: "/about/"
   fr:
     contentDir: content
     # disabled: false
     languageCode: fr-FR
     languageDirection: ltr
     languageName: Français
-    weight: 2
+    # weight: 2
     params:
       profileMode:
         enabled: true
@@ -54,7 +54,7 @@ languages:
         subtitle: |
           Je conçois des logiciels rapides et durables, pensés pour créer de la valeur.  
           100&nbsp;% à distance, axé performance
-        imageUrl: "images/emmanuel-io-avatar.png"
+        imageUrl: "images/emmanuel-io-avatar-400x400.png"
         imageTitle: "Ma photo"
         imageWidth: 400
         imageHeight: 400

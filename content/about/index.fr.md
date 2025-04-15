@@ -42,7 +42,7 @@ Et la seule règle qui prime sur toutes les autres :
 
 ---
 
-📄 [Télécharger mon CV](cv/emmanuel-amadio-cv.pdf)  
+📄 [Télécharger mon CV](/cv/emmanuel-amadio-cv.pdf)  
 🔗 [GitHub](https://github.com/emmanuel-io)  
 🔗 [LinkedIn](https://www.linkedin.com/in/emmanuelamadio/)
 -->

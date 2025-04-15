@@ -1,4 +1,4 @@
 public/
 *.code-workspace
 .hugo_build.lock
-static/admin*
+static/admin

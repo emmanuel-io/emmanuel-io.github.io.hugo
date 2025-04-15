@@ -6,7 +6,7 @@ ShowToc: false
 translationKey: cv-page
 ---
 
-📄 [Download PDF version](../cv/emmanuel-amadio-cv.pdf)
+📄 [Download PDF version](/cv/emmanuel-amadio-cv.pdf)
 
 # 👋 Emmanuel Amadio (emmanuel io)  
 **Freelance Software Engineer** — Python · SQL · Efficient Systems · Remote Only

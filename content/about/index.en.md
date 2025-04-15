@@ -41,7 +41,7 @@ And the one rule that overrides all others:
 <!--
 ---
 
-📄 [Download my CV](cv/emmanuel-amadio-cv.pdf)  
+📄 [Download my CV](/cv/emmanuel-amadio-cv.pdf)  
 🔗 [GitHub](https://github.com/emmanuel-io)  
 🔗 [LinkedIn](https://www.linkedin.com/in/emmanuelamadio/)
 -->

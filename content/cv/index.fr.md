@@ -6,7 +6,7 @@ ShowToc: false
 translationKey: cv-page
 ---
 
-📄 [Télécharger la version PDF (en anglais)](../cv/emmanuel-amadio-cv.pdf)
+📄 [Télécharger la version PDF (en anglais)](/emmanuel-amadio-cv.pdf)
 
 # 👋 Emmanuel Amadio (emmanuel io)  
 **Ingénieur logiciel freelance** — Python · SQL · Systèmes performants · 100 % à distance

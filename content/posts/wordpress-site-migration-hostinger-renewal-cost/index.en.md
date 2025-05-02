@@ -128,9 +128,9 @@ By now, everything was uploaded, configured, and most issues were resolved. But 
 
 ## Conclusion: is the time spent worth it?
 
-Looking back, the migration was a learning experience. Sure, I saved on the renewal cost, but the time spent troubleshooting, moving files, dealing with `.htaccess` issues, and moving emails probably cost me more in time than the actual price of the renewal.
+Looking back, the migration was a learning experience. Sure, I saved on the renewal cost, but the time spent troubleshooting, moving files, dealing with .htaccess issues, and transferring emails likely cost me more in time than simply renewing the plan.
 
-But, in the end, I learned a bit about WordPress, hosting configurations, and server-side issues. If anything, it prepared me for future migrations (though next time, I might be more inclined to just pay the renewal and avoid the hassle).
+But in the end, I gained valuable insight into WordPress configurations, server-side troubleshooting, and hosting management. It’s a lesson that will definitely help me in future migrations — though next time, I might just pay the renewal and avoid the hassle. **Time is money**, after all.
 
 ### Next Up: Moving a WordPress Site to Hugo
 
@@ -138,8 +138,4 @@ If WordPress to WordPress migration was ok, next time, I’m going to take on th
 
 ---
 
-**Lesson learned**: Sometimes, the **convenience of not moving** comes at the cost of the **time spent** in the process. But hey, time is money, right? 😜
-
-
-### Fun Quote:
-_"It felt like I was spending more time doing this than if I just paid for the renewal — but I was learning, right?"_
+**Lesson learned**: Sometimes, the **convenience of not moving** comes at the cost of the **time spent** in the process. 😜

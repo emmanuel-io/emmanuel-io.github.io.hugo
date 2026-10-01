@@ -2,3 +2,4 @@ public/
 *.code-workspace
 .hugo_build.lock
 static/admin
+resources/

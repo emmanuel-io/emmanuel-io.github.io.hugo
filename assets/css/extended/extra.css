@@ -32,7 +32,7 @@
   --border: #1f1f1f;
 }
 */
-.dark {
+:root[data-theme="dark"] {
   --theme: #0a0a0a;
   /* Background base */
   --entry: #13271d;
@@ -57,7 +57,7 @@
   background: var(--theme);
 }
 
-.dark.list {
+[data-theme="dark"] .list {
   background: var(--theme);
 }
 

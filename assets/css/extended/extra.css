@@ -80,6 +80,8 @@ a:hover {
 } */
 
 .profile_inner img {
+  aspect-ratio: 1/1;
+  max-width: 100%;
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 

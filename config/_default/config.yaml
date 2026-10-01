@@ -16,9 +16,9 @@ languages:
   en:
     contentDir: content
     # disabled: false
-    languageCode: en-US
-    languageDirection: ltr
-    languageName: English
+    locale: en-US
+    direction: ltr
+    label: English
     # weight: 1
     params:
       profileMode:
@@ -41,9 +41,9 @@ languages:
   fr:
     contentDir: content
     # disabled: false
-    languageCode: fr-FR
-    languageDirection: ltr
-    languageName: Français
+    locale: fr-FR
+    direction: ltr
+    label: Français
     # weight: 2
     params:
       profileMode:
